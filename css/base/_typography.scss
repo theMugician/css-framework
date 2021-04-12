@@ -1,0 +1,34 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $color__text;
+  font: normal $base__main-font-size $font-stack__text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: $spacing__small;
+	font-weight: bold;
+	color: $color__black;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+p {
+	font-size: $base__main-font-size;
+	margin-bottom: $spacing__small;
+}
+
+.small {
+	font-size: $base__main-font-size * 0.8;
+}
+
+.extra-small {
+	font-size: $base__main-font-size * 0.6;
+}

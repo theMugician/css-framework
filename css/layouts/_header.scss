@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+	padding-top: $spacing;
+	padding-bottom: $spacing;
+	height: 10rem;
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	&__item {
+		margin-left: 2rem;
+		a {
+			align-self: center;
+			padding: 2rem;
+			color: $color__primary;
+			text-decoration: none;
+		}
+	}
+}

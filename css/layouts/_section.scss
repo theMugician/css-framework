@@ -1,0 +1,8 @@
+.section {
+	padding-top: $spacing--large;
+	padding-bottom: $spacing--large;
+	&--small {
+		padding-top: $spacing;
+		padding-bottom: $spacing;
+	}
+}

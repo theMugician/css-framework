@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+// Base
+/// @type Number
+$base__size: 0.5rem;
+$base__reset-font-size: 62.5%;
+$base__main-font-size: 1.8rem;
+$base__line-height: 1.5;
+$base__touch-size: 36px;
+
+// Font stack
+/// @type List
+$font-stack__text: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-stack__code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+// Border radius
+/// @type Number
+$border-radius: 0.4rem;
+$border-radius--large: 0.8rem;
+$border-radius--extra-large: 2.4rem;
+// Spacing
+/// @type Number
+$spacing: 4 * $base__size;
+$spacing--large: 8 * $base__size;
+$spacing--small: 2 * $base__size;
+
+/// Colors map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$colors: (
+  'primary' : #1b77b9,
+  'primary--light' : #626ED4,
+  'secondary' : #d44711,
+  'secondary--light' : #d44711,
+  'black' : #0a2540,
+  'text' : #425466,  
+  'grey': #666666,
+  'grey--light': #222222,
+  'white': #FFFFFF,
+  'success': #2AA39A,
+  'danger': #EC4561,
+  'warning': #F8B425,
+  'info': #38A5F8,
+  'muted': #EDECF1
+);
+
+
+// Colors
+// Make sure colors match up at the top
+/// @type Color
+$color__primary: #1b77b9;
+$color__primary--light: #626ED4;
+$color__secondary: #d44711;
+$color__secondary--light: #d44711;
+$color__black: #0a2540;
+$color__text: #425466;
+$color__grey: #666666;
+$color__grey--light: #222222;
+$color__white: #FFFFFF;
+$color__success: #2AA39A;
+$color__danger: #EC4561;
+$color__warning: #F8B425;
+$color__info: #38A5F8;
+$color__muted: #EDECF1;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width__no-max: 100%;
+$max-width: 108rem !default;
+$max-width__medium: 84rem !default;
+$max-width__small: 64rem !default;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

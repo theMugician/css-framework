@@ -1,0 +1,1306 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  transition: all 0.2s ease;
+}
+
+.color__primary {
+  color: #1b77b9;
+}
+
+.color__primary--light {
+  color: #626ED4;
+}
+
+.color__secondary {
+  color: #d44711;
+}
+
+.color__secondary--light {
+  color: #d44711;
+}
+
+.color__black {
+  color: #0a2540;
+}
+
+.color__text {
+  color: #425466;
+}
+
+.color__grey {
+  color: #666666;
+}
+
+.color__grey--light {
+  color: #222222;
+}
+
+.color__white {
+  color: #FFFFFF;
+}
+
+.color__success {
+  color: #2AA39A;
+}
+
+.color__danger {
+  color: #EC4561;
+}
+
+.color__warning {
+  color: #F8B425;
+}
+
+.color__info {
+  color: #38A5F8;
+}
+
+.color__muted {
+  color: #EDECF1;
+}
+
+.background-color__primary {
+  background-color: #1b77b9;
+}
+
+.background-color__primary--light {
+  background-color: #626ED4;
+}
+
+.background-color__secondary {
+  background-color: #d44711;
+}
+
+.background-color__secondary--light {
+  background-color: #d44711;
+}
+
+.background-color__black {
+  background-color: #0a2540;
+}
+
+.background-color__text {
+  background-color: #425466;
+}
+
+.background-color__grey {
+  background-color: #666666;
+}
+
+.background-color__grey--light {
+  background-color: #222222;
+}
+
+.background-color__white {
+  background-color: #FFFFFF;
+}
+
+.background-color__success {
+  background-color: #2AA39A;
+}
+
+.background-color__danger {
+  background-color: #EC4561;
+}
+
+.background-color__warning {
+  background-color: #F8B425;
+}
+
+.background-color__info {
+  background-color: #38A5F8;
+}
+
+.background-color__muted {
+  background-color: #EDECF1;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: #425466;
+  font: normal 1.8rem "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #0a2540;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.small {
+  font-size: 1.44rem;
+}
+
+.extra-small {
+  font-size: 1.08rem;
+}
+
+.padding__top--0 {
+  padding-top: 0px;
+}
+
+.padding__bottom--0 {
+  padding-bottom: 0px;
+}
+
+.margin__top--0 {
+  margin-top: 0px;
+}
+
+.margin__bottom--0 {
+  margin-bottom: 0px;
+}
+
+.padding__top--5 {
+  padding-top: 5px;
+}
+
+.padding__bottom--5 {
+  padding-bottom: 5px;
+}
+
+.margin__top--5 {
+  margin-top: 5px;
+}
+
+.margin__bottom--5 {
+  margin-bottom: 5px;
+}
+
+.padding__top--10 {
+  padding-top: 10px;
+}
+
+.padding__bottom--10 {
+  padding-bottom: 10px;
+}
+
+.margin__top--10 {
+  margin-top: 10px;
+}
+
+.margin__bottom--10 {
+  margin-bottom: 10px;
+}
+
+.padding__top--15 {
+  padding-top: 15px;
+}
+
+.padding__bottom--15 {
+  padding-bottom: 15px;
+}
+
+.margin__top--15 {
+  margin-top: 15px;
+}
+
+.margin__bottom--15 {
+  margin-bottom: 15px;
+}
+
+.padding__top--20 {
+  padding-top: 20px;
+}
+
+.padding__bottom--20 {
+  padding-bottom: 20px;
+}
+
+.margin__top--20 {
+  margin-top: 20px;
+}
+
+.margin__bottom--20 {
+  margin-bottom: 20px;
+}
+
+.padding__top--25 {
+  padding-top: 25px;
+}
+
+.padding__bottom--25 {
+  padding-bottom: 25px;
+}
+
+.margin__top--25 {
+  margin-top: 25px;
+}
+
+.margin__bottom--25 {
+  margin-bottom: 25px;
+}
+
+.padding__top--30 {
+  padding-top: 30px;
+}
+
+.padding__bottom--30 {
+  padding-bottom: 30px;
+}
+
+.margin__top--30 {
+  margin-top: 30px;
+}
+
+.margin__bottom--30 {
+  margin-bottom: 30px;
+}
+
+.padding__top--35 {
+  padding-top: 35px;
+}
+
+.padding__bottom--35 {
+  padding-bottom: 35px;
+}
+
+.margin__top--35 {
+  margin-top: 35px;
+}
+
+.margin__bottom--35 {
+  margin-bottom: 35px;
+}
+
+.padding__top--40 {
+  padding-top: 40px;
+}
+
+.padding__bottom--40 {
+  padding-bottom: 40px;
+}
+
+.margin__top--40 {
+  margin-top: 40px;
+}
+
+.margin__bottom--40 {
+  margin-bottom: 40px;
+}
+
+.padding__top--45 {
+  padding-top: 45px;
+}
+
+.padding__bottom--45 {
+  padding-bottom: 45px;
+}
+
+.margin__top--45 {
+  margin-top: 45px;
+}
+
+.margin__bottom--45 {
+  margin-bottom: 45px;
+}
+
+.padding__top--50 {
+  padding-top: 50px;
+}
+
+.padding__bottom--50 {
+  padding-bottom: 50px;
+}
+
+.margin__top--50 {
+  margin-top: 50px;
+}
+
+.margin__bottom--50 {
+  margin-bottom: 50px;
+}
+
+.padding__top--55 {
+  padding-top: 55px;
+}
+
+.padding__bottom--55 {
+  padding-bottom: 55px;
+}
+
+.margin__top--55 {
+  margin-top: 55px;
+}
+
+.margin__bottom--55 {
+  margin-bottom: 55px;
+}
+
+.padding__top--60 {
+  padding-top: 60px;
+}
+
+.padding__bottom--60 {
+  padding-bottom: 60px;
+}
+
+.margin__top--60 {
+  margin-top: 60px;
+}
+
+.margin__bottom--60 {
+  margin-bottom: 60px;
+}
+
+.padding__top--65 {
+  padding-top: 65px;
+}
+
+.padding__bottom--65 {
+  padding-bottom: 65px;
+}
+
+.margin__top--65 {
+  margin-top: 65px;
+}
+
+.margin__bottom--65 {
+  margin-bottom: 65px;
+}
+
+.padding__top--70 {
+  padding-top: 70px;
+}
+
+.padding__bottom--70 {
+  padding-bottom: 70px;
+}
+
+.margin__top--70 {
+  margin-top: 70px;
+}
+
+.margin__bottom--70 {
+  margin-bottom: 70px;
+}
+
+.padding__top--75 {
+  padding-top: 75px;
+}
+
+.padding__bottom--75 {
+  padding-bottom: 75px;
+}
+
+.margin__top--75 {
+  margin-top: 75px;
+}
+
+.margin__bottom--75 {
+  margin-bottom: 75px;
+}
+
+.padding__top--80 {
+  padding-top: 80px;
+}
+
+.padding__bottom--80 {
+  padding-bottom: 80px;
+}
+
+.margin__top--80 {
+  margin-top: 80px;
+}
+
+.margin__bottom--80 {
+  margin-bottom: 80px;
+}
+
+.padding__top--85 {
+  padding-top: 85px;
+}
+
+.padding__bottom--85 {
+  padding-bottom: 85px;
+}
+
+.margin__top--85 {
+  margin-top: 85px;
+}
+
+.margin__bottom--85 {
+  margin-bottom: 85px;
+}
+
+.padding__top--90 {
+  padding-top: 90px;
+}
+
+.padding__bottom--90 {
+  padding-bottom: 90px;
+}
+
+.margin__top--90 {
+  margin-top: 90px;
+}
+
+.margin__bottom--90 {
+  margin-bottom: 90px;
+}
+
+.padding__top--95 {
+  padding-top: 95px;
+}
+
+.padding__bottom--95 {
+  padding-bottom: 95px;
+}
+
+.margin__top--95 {
+  margin-top: 95px;
+}
+
+.margin__bottom--95 {
+  margin-bottom: 95px;
+}
+
+.padding__top--100 {
+  padding-top: 100px;
+}
+
+.padding__bottom--100 {
+  padding-bottom: 100px;
+}
+
+.margin__top--100 {
+  margin-top: 100px;
+}
+
+.margin__bottom--100 {
+  margin-bottom: 100px;
+}
+
+.padding__top--105 {
+  padding-top: 105px;
+}
+
+.padding__bottom--105 {
+  padding-bottom: 105px;
+}
+
+.margin__top--105 {
+  margin-top: 105px;
+}
+
+.margin__bottom--105 {
+  margin-bottom: 105px;
+}
+
+.padding__top--110 {
+  padding-top: 110px;
+}
+
+.padding__bottom--110 {
+  padding-bottom: 110px;
+}
+
+.margin__top--110 {
+  margin-top: 110px;
+}
+
+.margin__bottom--110 {
+  margin-bottom: 110px;
+}
+
+.padding__top--115 {
+  padding-top: 115px;
+}
+
+.padding__bottom--115 {
+  padding-bottom: 115px;
+}
+
+.margin__top--115 {
+  margin-top: 115px;
+}
+
+.margin__bottom--115 {
+  margin-bottom: 115px;
+}
+
+.padding__top--120 {
+  padding-top: 120px;
+}
+
+.padding__bottom--120 {
+  padding-bottom: 120px;
+}
+
+.margin__top--120 {
+  margin-top: 120px;
+}
+
+.margin__bottom--120 {
+  margin-bottom: 120px;
+}
+
+.padding__top--125 {
+  padding-top: 125px;
+}
+
+.padding__bottom--125 {
+  padding-bottom: 125px;
+}
+
+.margin__top--125 {
+  margin-top: 125px;
+}
+
+.margin__bottom--125 {
+  margin-bottom: 125px;
+}
+
+.padding__top--130 {
+  padding-top: 130px;
+}
+
+.padding__bottom--130 {
+  padding-bottom: 130px;
+}
+
+.margin__top--130 {
+  margin-top: 130px;
+}
+
+.margin__bottom--130 {
+  margin-bottom: 130px;
+}
+
+.padding__top--135 {
+  padding-top: 135px;
+}
+
+.padding__bottom--135 {
+  padding-bottom: 135px;
+}
+
+.margin__top--135 {
+  margin-top: 135px;
+}
+
+.margin__bottom--135 {
+  margin-bottom: 135px;
+}
+
+.padding__top--140 {
+  padding-top: 140px;
+}
+
+.padding__bottom--140 {
+  padding-bottom: 140px;
+}
+
+.margin__top--140 {
+  margin-top: 140px;
+}
+
+.margin__bottom--140 {
+  margin-bottom: 140px;
+}
+
+.padding__top--145 {
+  padding-top: 145px;
+}
+
+.padding__bottom--145 {
+  padding-bottom: 145px;
+}
+
+.margin__top--145 {
+  margin-top: 145px;
+}
+
+.margin__bottom--145 {
+  margin-bottom: 145px;
+}
+
+.padding__top--150 {
+  padding-top: 150px;
+}
+
+.padding__bottom--150 {
+  padding-bottom: 150px;
+}
+
+.margin__top--150 {
+  margin-top: 150px;
+}
+
+.margin__bottom--150 {
+  margin-bottom: 150px;
+}
+
+.padding__top--155 {
+  padding-top: 155px;
+}
+
+.padding__bottom--155 {
+  padding-bottom: 155px;
+}
+
+.margin__top--155 {
+  margin-top: 155px;
+}
+
+.margin__bottom--155 {
+  margin-bottom: 155px;
+}
+
+.padding__top--160 {
+  padding-top: 160px;
+}
+
+.padding__bottom--160 {
+  padding-bottom: 160px;
+}
+
+.margin__top--160 {
+  margin-top: 160px;
+}
+
+.margin__bottom--160 {
+  margin-bottom: 160px;
+}
+
+.padding__top--165 {
+  padding-top: 165px;
+}
+
+.padding__bottom--165 {
+  padding-bottom: 165px;
+}
+
+.margin__top--165 {
+  margin-top: 165px;
+}
+
+.margin__bottom--165 {
+  margin-bottom: 165px;
+}
+
+.padding__top--170 {
+  padding-top: 170px;
+}
+
+.padding__bottom--170 {
+  padding-bottom: 170px;
+}
+
+.margin__top--170 {
+  margin-top: 170px;
+}
+
+.margin__bottom--170 {
+  margin-bottom: 170px;
+}
+
+.padding__top--175 {
+  padding-top: 175px;
+}
+
+.padding__bottom--175 {
+  padding-bottom: 175px;
+}
+
+.margin__top--175 {
+  margin-top: 175px;
+}
+
+.margin__bottom--175 {
+  margin-bottom: 175px;
+}
+
+.padding__top--180 {
+  padding-top: 180px;
+}
+
+.padding__bottom--180 {
+  padding-bottom: 180px;
+}
+
+.margin__top--180 {
+  margin-top: 180px;
+}
+
+.margin__bottom--180 {
+  margin-bottom: 180px;
+}
+
+.padding__top--185 {
+  padding-top: 185px;
+}
+
+.padding__bottom--185 {
+  padding-bottom: 185px;
+}
+
+.margin__top--185 {
+  margin-top: 185px;
+}
+
+.margin__bottom--185 {
+  margin-bottom: 185px;
+}
+
+.padding__top--190 {
+  padding-top: 190px;
+}
+
+.padding__bottom--190 {
+  padding-bottom: 190px;
+}
+
+.margin__top--190 {
+  margin-top: 190px;
+}
+
+.margin__bottom--190 {
+  margin-bottom: 190px;
+}
+
+.padding__top--195 {
+  padding-top: 195px;
+}
+
+.padding__bottom--195 {
+  padding-bottom: 195px;
+}
+
+.margin__top--195 {
+  margin-top: 195px;
+}
+
+.margin__bottom--195 {
+  margin-bottom: 195px;
+}
+
+.padding__top--200 {
+  padding-top: 200px;
+}
+
+.padding__bottom--200 {
+  padding-bottom: 200px;
+}
+
+.margin__top--200 {
+  margin-top: 200px;
+}
+
+.margin__bottom--200 {
+  margin-bottom: 200px;
+}
+
+.button {
+  border-radius: 2.4rem;
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: center;
+  padding: 1.6rem 2.4rem;
+  min-width: 16rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1b77b9;
+  border: 0.2rem solid #1b77b9;
+}
+.button--small {
+  padding: 1.2rem 2rem;
+  min-width: 10rem;
+}
+
+.button--primary {
+  background-color: #1b77b9;
+  color: #fff;
+  border: 0.2rem solid #1b77b9;
+}
+
+.button--primary--light {
+  background-color: #626ED4;
+  color: #fff;
+  border: 0.2rem solid #626ED4;
+}
+
+.button--secondary {
+  background-color: #d44711;
+  color: #fff;
+  border: 0.2rem solid #d44711;
+}
+
+.button--secondary--light {
+  background-color: #d44711;
+  color: #fff;
+  border: 0.2rem solid #d44711;
+}
+
+.button--black {
+  background-color: #0a2540;
+  color: #fff;
+  border: 0.2rem solid #0a2540;
+}
+
+.button--text {
+  background-color: #425466;
+  color: #fff;
+  border: 0.2rem solid #425466;
+}
+
+.button--grey {
+  background-color: #666666;
+  color: #fff;
+  border: 0.2rem solid #666666;
+}
+
+.button--grey--light {
+  background-color: #222222;
+  color: #fff;
+  border: 0.2rem solid #222222;
+}
+
+.button--white {
+  background-color: #FFFFFF;
+  color: #fff;
+  border: 0.2rem solid #FFFFFF;
+}
+
+.button--success {
+  background-color: #2AA39A;
+  color: #fff;
+  border: 0.2rem solid #2AA39A;
+}
+
+.button--danger {
+  background-color: #EC4561;
+  color: #fff;
+  border: 0.2rem solid #EC4561;
+}
+
+.button--warning {
+  background-color: #F8B425;
+  color: #fff;
+  border: 0.2rem solid #F8B425;
+}
+
+.button--info {
+  background-color: #38A5F8;
+  color: #fff;
+  border: 0.2rem solid #38A5F8;
+}
+
+.button--muted {
+  background-color: #EDECF1;
+  color: #fff;
+  border: 0.2rem solid #EDECF1;
+}
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 2rem;
+}
+.nav__item a {
+  align-self: center;
+  padding: 2rem;
+  color: #1b77b9;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 108rem;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 2rem;
+  /* 3 */
+  padding-right: 2rem;
+  /* 3 */
+  width: 100%;
+  /* 1 */
+}
+.container--full-width {
+  max-width: 108rem;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 2rem;
+  /* 3 */
+  padding-right: 2rem;
+  /* 3 */
+  width: 100%;
+  /* 1 */
+  max-width: 100%;
+}
+.container--medium {
+  max-width: 108rem;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 2rem;
+  /* 3 */
+  padding-right: 2rem;
+  /* 3 */
+  width: 100%;
+  /* 1 */
+  max-width: 84rem;
+}
+.container--small {
+  max-width: 108rem;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 2rem;
+  /* 3 */
+  padding-right: 2rem;
+  /* 3 */
+  width: 100%;
+  /* 1 */
+  max-width: 64rem;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.section--small {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex__align-center {
+  margin: auto;
+  align-self: center;
+}
+.flex__align-left {
+  margin-right: auto;
+  align-self: center;
+}
+.flex__align-right {
+  margin-left: auto;
+  align-self: center;
+}
+.flex__align-x-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+.flex__align-x-left {
+  margin-right: auto;
+}
+.flex__align-x-right {
+  margin-left: auto;
+}
+.flex__align-y-center {
+  align-self: center;
+}
+.flex__align-y-top {
+  align-self: flex-start;
+}
+.flex__align-y-bottom {
+  align-self: flex-end;
+}
+
+/*  FLEX ITEM
+    Summary:    a shorthand property specifying the ability of a flex item to alter
+                its dimensions to fill available space. Summarizes {flex-grow, flex-shrink, flex-basis }
+    Reference:  https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+    Default:    0 1 0;
+*/
+.flexed-item {
+  flex: 1 1 0;
+}
+
+.flexed-item--auto {
+  flex: 1 1 auto;
+}
+
+/*  DIRECTION ( ORIENTATION )  -------------------------------------------------
+    Summary:    specifies how flex items are placed in the flex container defining
+                the main axis and the direction (normal or reversed).
+    Options:
+        Column: set main axis to vertical
+        Row :   set main axis to horizontal
+    Reference:  https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+    Default:    flex-direction: row;
+*/
+.flex__column {
+  flex-direction: column;
+}
+
+.flex__row {
+  flex-direction: row;
+}
+
+/*  JUSTIFICATION (Main axis)   ------------------------------------------------
+    Summary:    defines how the browser distributes space between and around flex
+    items along the main-axis of their container.
+    Reference:  https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+    Default:    justify-content: flex-start;
+*/
+/* Pack items around the center */
+.flex__content-center {
+  justify-content: center;
+}
+
+/* Pack flex items from the start  */
+.flex__content-start {
+  justify-content: flex-start;
+}
+
+/* Pack items from the end */
+.flex__content-end {
+  justify-content: flex-end;
+}
+
+/* Distribute items evenly,
+    The first item at the start, the last at the end */
+.flex__content-between {
+  justify-content: space-between;
+}
+
+/* Distribute items evenly
+    Items have equal space around them */
+.flex__content-around {
+  justify-content: space-around;
+}
+
+/*
+    ALIGN CONTENT ( Cross axis )  ----------------------------------------------
+    Summary:   aligns a flex container's lines within the flex container when
+               there is extra space on the cross-axis.
+    Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+    Default:   align-content: flex-start;
+*/
+/* Pack lines from the cross-axis start */
+.flex__align-content-start {
+  align-content: flex-start;
+}
+
+/* Pack lines to the cross-axis end */
+.flex__align-content-end {
+  align-content: flex-end;
+}
+
+/* Pack lines around the cross-axis center */
+.flex__align-content-center {
+  align-content: center;
+}
+
+/* Distribute lines along the cross-axis, start to end */
+.flex__align-content-between {
+  align-content: space-between;
+}
+
+/* Distribute lines along the cross-axis, equally spaced */
+.flex__align-content-around {
+  align-content: space-around;
+}
+
+/* Stretch lines to occupy the whole cross-axis */
+.flex__align-content-stretch {
+  align-content: stretch;
+}
+
+/*
+    ALIGN ITEMS ( Cross axis )  ------------------------------------------------
+    Summary:   aligns flex items of the current flex line the same way as
+               justify-content but in the perpendicular direction.
+    Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+    Default:   align-items: stretch;
+*/
+/* Center items in the cross-axis */
+.flex__align-items-center {
+  align-items: center;
+}
+
+/* Align to cross-start */
+.flex__align-items-start {
+  align-items: flex-start;
+}
+
+/* Align to cross-end */
+.flex__align-items-end {
+  align-items: flex-end;
+}
+
+/* Align the items' baselines */
+.flex__align-items-baseline {
+  align-items: baseline;
+}
+
+/* Stretch the items to fit
+    DEFAULT VALUE  */
+.flex__align-items-stretch {
+  align-items: stretch;
+}
+
+/*
+    ALIGN SELF ( Cross axis )  ------------------------------------------------
+    Summary:   aligns flex items of the current flex line overriding the align-items value.
+    Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+    Default:   align-self: auto;
+*/
+/*  Computes to parent's align-items value or stretch if the element has no parent.  */
+.flex__align-self-auto {
+  align-self: auto;
+}
+
+/*  Cross-start margin edge of the flex item is flushed with the cross-start edge of the line.  */
+.flex__align-self-start {
+  align-self: flex-start;
+}
+
+/*  Cross-end margin edge of the flex item is flushed with the cross-end edge of the line.  */
+.flex__align-self-end {
+  align-self: flex-end;
+}
+
+/* Flex item's margin box is centered within the line on the cross-axis.
+    If the cross-size of the item is larger than the flex container, it will
+    overflow equally in both directions.  */
+.flex__align-self-center {
+  align-self: center;
+}
+
+/*  All flex items are aligned such that their baselines align. The item with
+    the largest distance between its cross-start margin edge and its baseline is
+    flushed with the cross-start edge of the line.  */
+.flex__align-self-baseline {
+  align-self: baseline;
+}
+
+/*  Flex items are stretched such as the cross-size of the item's margin box is
+    the same as the line while respecting width and height constraints.  */
+.flex__align-self-stretch {
+  align-self: stretch;
+}
+
+/*
+    WRAPPING -------------------------------------------------------------------
+    Summary:   specifies whether flex items are forced into a single line or can
+               be wrapped onto multiple lines. If wrapping is allowed, this property
+               also enables you to control the direction in which lines are stacked.
+    Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+    Default:   flex-wrap: nowrap;
+*/
+.flex__no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex__reverse-wrap {
+  flex-wrap: wrap-reverse;
+}
+
+.flex__wrap {
+  flex-wrap: wrap;
+}
+
+/*
+    VISUAL ORDER ---------------------------------------------------------------
+    Summary:   specifies the order used to lay out flex items in their flex container.
+               Elements are laid out in the ascending order of the order value.
+               Elements with the same order value are laid out in the order in
+               which they appear in the source code.
+    Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/order
+    Default:   order: 0; { no order }
+*/
+.flex__order-one {
+  -webkit-order: 1;
+  order: 1;
+}
+
+.flex__order-two {
+  -webkit-order: 2;
+  order: 2;
+}
+
+.flex__order-three {
+  -webkit-order: 3;
+  order: 3;
+}
+
+/*# sourceMappingURL=main.css.map */

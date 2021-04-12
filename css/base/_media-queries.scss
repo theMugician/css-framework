@@ -1,0 +1,92 @@
+// media aliases and breakpoints
+$screen__sm-min: 600px;
+$screen__md-min: 960px;
+$screen__lg-min: 1280px;
+$screen__xl-min: 1920px;
+
+$screen__xs-max: 599.9px;
+$screen__sm-max: 959px;
+$screen__md-max: 1279px;
+$screen__lg-max: 1919px;
+$screen__xl-max: 5000px;
+
+// media devices
+@mixin screen__xs {
+  @media screen and (max-width: #{$screen__xs-max}) {
+    @content;
+  }
+}
+
+@mixin screen__sm {
+  @media screen and (min-width: #{$screen__sm-min}) and (max-width: #{$screen__sm-max}) {
+    @content;
+  }
+}
+
+@mixin screen__md {
+  @media screen and (min-width: #{$screen__md-min}) and (max-width: #{$screen__md-max}) {
+    @content;
+  }
+}
+
+@mixin screen__lg {
+  @media screen and (min-width: #{$screen__lg-min}) and (max-width: #{$screen__lg-max}) {
+    @content;
+  }
+}
+
+@mixin screen__xl {
+  @media screen and (min-width: #{$screen__xl-min}) and (max-width: #{$screen__xl-max}) {
+    @content;
+  }
+}
+
+// media lt queries
+@mixin screen__lt-sm {
+  @media screen and (max-width: #{$screen__xs-max}) {
+    @content;
+  }
+}
+
+@mixin screen__lt-md {
+  @media screen and (max-width: #{$screen__sm-max}) {
+    @content;
+  }
+}
+
+@mixin screen__lt-lg {
+  @media screen and (max-width: #{$screen__md-max}) {
+    @content;
+  }
+}
+
+@mixin screen__lt-xl {
+  @media screen and (max-width: #{$screen__lg-max}) {
+    @content;
+  }
+}
+
+// media gt queries
+@mixin screen__gt-xs {
+  @media screen and (min-width: #{$screen__sm-min}) {
+    @content;
+  }
+}
+
+@mixin screen__gt-sm {
+  @media screen and (min-width: #{$screen__md-min}) {
+    @content;
+  }
+}
+
+@mixin screen__gt-md {
+  @media screen and (min-width: #{$screen__lg-min}) {
+    @content;
+  }
+}
+
+@mixin screen__gt-lg {
+  @media screen and (min-width: #{$screen__xl-min}) {
+    @content;
+  }
+}
