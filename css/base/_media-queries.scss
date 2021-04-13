@@ -12,81 +12,81 @@ $screen__xl-max: 5000px;
 
 // media devices
 @mixin screen__xs {
-  @media screen and (max-width: #{$screen__xs-max}) {
+  @media (max-width: #{$screen__xs-max}) {
     @content;
   }
 }
 
 @mixin screen__sm {
-  @media screen and (min-width: #{$screen__sm-min}) and (max-width: #{$screen__sm-max}) {
+  @media (min-width: #{$screen__sm-min}) and (max-width: #{$screen__sm-max}) {
     @content;
   }
 }
 
 @mixin screen__md {
-  @media screen and (min-width: #{$screen__md-min}) and (max-width: #{$screen__md-max}) {
+  @media (min-width: #{$screen__md-min}) and (max-width: #{$screen__md-max}) {
     @content;
   }
 }
 
 @mixin screen__lg {
-  @media screen and (min-width: #{$screen__lg-min}) and (max-width: #{$screen__lg-max}) {
+  @media (min-width: #{$screen__lg-min}) and (max-width: #{$screen__lg-max}) {
     @content;
   }
 }
 
 @mixin screen__xl {
-  @media screen and (min-width: #{$screen__xl-min}) and (max-width: #{$screen__xl-max}) {
+  @media (min-width: #{$screen__xl-min}) and (max-width: #{$screen__xl-max}) {
     @content;
   }
 }
 
 // media lt queries
 @mixin screen__lt-sm {
-  @media screen and (max-width: #{$screen__xs-max}) {
+  @media (max-width: #{$screen__xs-max}) {
     @content;
   }
 }
 
 @mixin screen__lt-md {
-  @media screen and (max-width: #{$screen__sm-max}) {
+  @media (max-width: #{$screen__sm-max}) {
     @content;
   }
 }
 
 @mixin screen__lt-lg {
-  @media screen and (max-width: #{$screen__md-max}) {
+  @media (max-width: #{$screen__md-max}) {
     @content;
   }
 }
 
 @mixin screen__lt-xl {
-  @media screen and (max-width: #{$screen__lg-max}) {
+  @media (max-width: #{$screen__lg-max}) {
     @content;
   }
 }
 
 // media gt queries
 @mixin screen__gt-xs {
-  @media screen and (min-width: #{$screen__sm-min}) {
+  @media (min-width: #{$screen__sm-min}) {
     @content;
   }
 }
 
 @mixin screen__gt-sm {
-  @media screen and (min-width: #{$screen__md-min}) {
+  @media (min-width: #{$screen__md-min}) {
     @content;
   }
 }
 
 @mixin screen__gt-md {
-  @media screen and (min-width: #{$screen__lg-min}) {
+  @media (min-width: #{$screen__lg-min}) {
     @content;
   }
 }
 
 @mixin screen__gt-lg {
-  @media screen and (min-width: #{$screen__xl-min}) {
+  @media (min-width: #{$screen__xl-min}) {
     @content;
   }
 }

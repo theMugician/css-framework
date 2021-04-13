@@ -7,6 +7,7 @@
  */
 html {
   box-sizing: border-box;
+  z-index: 1;
 }
 
 /**
@@ -25,16 +26,16 @@ html {
  * Basic styles for links
  */
 a {
-  color: $color__link;
+  color: $color__primary;
   text-decoration: none;
 
   @include on-event {
-    color: $color__link;
+    color: $color__primary;
     text-decoration: underline;
   }
 }
 
-$border__size: $base__size * 4px;
+$border__size: $base__size * 4;
 
 .border {
 	border: $border__size solid $color__grey--light;

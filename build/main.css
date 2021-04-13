@@ -58,6 +58,54 @@ body {
   transition: all 0.2s ease;
 }
 
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: #1b77b9;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: #1b77b9;
+  text-decoration: underline;
+}
+
+.border {
+  border: 2rem solid #222222;
+}
+.border--top {
+  border-top: 2rem solid #222222;
+}
+.border--bottom {
+  border-bottom: 2rem solid #222222;
+}
+.border--left {
+  border-left: 2rem solid #222222;
+}
+.border--right {
+  border-right: 2rem solid #222222;
+}
+
 .color__primary {
   color: #1b77b9;
 }
@@ -985,30 +1033,30 @@ p {
 
 .modal {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   display: none;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal.active {
-  display: block;
+  display: flex;
   opacity: 1;
 }
 .modal__container {
   width: 100%;
   max-width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 2rem;
   background: white;
+  z-index: 10000;
 }
 .modal__close {
   color: #aaa;
@@ -1036,7 +1084,7 @@ p {
 .nav__main-menu {
   display: flex;
 }
-@media screen and (max-width: 599.9px) {
+@media (max-width: 959.9px) {
   .nav__main-menu {
     display: none;
   }
@@ -1057,7 +1105,7 @@ p {
 .nav__burger {
   display: none;
 }
-@media screen and (max-width: 599.9px) {
+@media (max-width: 959.9px) {
   .nav__burger {
     display: block;
   }
@@ -1066,25 +1114,28 @@ p {
   display: none;
 }
 .nav__mobile-menu {
-  background: #FFFFFF;
-  width: 100%;
-  display: none;
-  transition: 0.5s;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  padding: 2rem;
   flex-direction: column;
+}
+.nav__mobile-menu .modal__container {
+  height: 100%;
+  width: 100%;
 }
 .nav__mobile-menu .nav__item {
   margin-left: 0;
-  padding: 2rem;
+}
+.nav__mobile-menu .nav__item a {
+  padding: 2rem 0;
+  display: block;
 }
 
 .nav__mobile-menu.active {
   display: flex;
   height: 100%;
+}
+
+#modal-nav-mobile-menu .modal__container {
+  height: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -1114,6 +1165,7 @@ p {
   /* 3 */
   width: 100%;
   /* 1 */
+  position: relative;
   max-width: 100%;
 }
 .container--medium {
@@ -1129,6 +1181,7 @@ p {
   /* 3 */
   width: 100%;
   /* 1 */
+  position: relative;
   max-width: 84rem;
 }
 .container--small {
@@ -1144,14 +1197,17 @@ p {
   /* 3 */
   width: 100%;
   /* 1 */
+  position: relative;
   max-width: 64rem;
 }
 
 .section {
+  position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 .section--small {
+  position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

@@ -7,6 +7,7 @@
   <title>Starter html</title>
   <meta name="description" content="Starter html build">
   <meta name="author" content="Greg Slonina | sevenoceans.agency">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="build/main.css">
 
 </head>
@@ -88,7 +89,7 @@
   </div>
 
   <!-- Add modals and scripts here -->
-  
+  <!--
   <div class="nav__mobile-menu">
     <a href="#" title="Close" class="js-toggle-modal">Close</a>
     <ul class="flex flex__column">
@@ -98,21 +99,19 @@
       <li class="nav__item"><a href="/page">Contact</a></li>
     </ul>
   </div>
+  -->
 
   <div class="modal" id="modal-nav-mobile-menu">
     <div class="modal__container">
       <a href="#modal-nav-mobile-menu" title="Close" class="js-toggle-modal">Close</a>
-      Modal content
-      <div class="nav__mobile-menu">
-        <ul class="flex flex__column">
-          <li class="nav__item"><a href="/page">About</a></li>
-          <li class="nav__item"><a href="/page">Documentation</a></li>
-          <li class="nav__item"><a href="/page">Github</a></li>
-          <li class="nav__item"><a href="/page">Contact</a></li>
-        </ul>
+      <ul class="flex flex__column nav__mobile-menu">
+        <li class="nav__item"><a href="/page">About</a></li>
+        <li class="nav__item"><a href="/page">Documentation</a></li>
+        <li class="nav__item"><a href="/page">Github</a></li>
+        <li class="nav__item"><a href="/page">Contact</a></li>
+      </ul>
     </div>
   </div>
-  
   <script src="build/main.js"></script>
 
 </body>
