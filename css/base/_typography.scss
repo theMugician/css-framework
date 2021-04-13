@@ -12,6 +12,36 @@ h1, h2, h3, h4, h5, h6 {
 	color: $color__black;
 }
 
+$heading-sizes: (
+	h1 : 5rem,
+	h2 : 4rem,
+	h3 : 3rem,
+	h4 : 2.4rem,
+	h5 : 2.1rem,
+	h6 : 1.8rem
+);
+
+@mixin font-size__mobile($size) {
+	@include screen__lt-sm {
+		font-size: 0.8 * $size;
+	}
+}
+
+@mixin font-size__title($size) {
+	font-size: 1.3 * $size;
+}
+
+@each $heading,$size in $heading-sizes {
+  #{$heading} {
+    font-size: $size;
+    &.title {
+    	@include font-size__title($size);
+    }
+    @include font-size__mobile($size);
+  }
+}
+
+/*
 h1 {
 	font-size: 5rem;
 }
@@ -35,6 +65,7 @@ h5 {
 h6 {
 	font-size: 1.6rem;
 }
+*/
 
 p {
 	font-size: $base__main-font-size;
