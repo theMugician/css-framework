@@ -26,11 +26,12 @@
           <li class="nav__item"><a class="button button--small button--secondary" href="/page">Contact</a></li>
         </ul>
       </nav>
-      <div 
-        class="nav__burger js-toggle-mobile-menu"
+      <a
+        class="nav__burger js-toggle-modal"
         style="background: red; height: 30px; width: 30px;"
+        href="#modal-nav-mobile-menu"
       >
-      </div>
+      </a>
     </div>
   </header>
   <div class="hero section background-color__black">
@@ -89,7 +90,7 @@
   <!-- Add modals and scripts here -->
   
   <div class="nav__mobile-menu">
-    <div class="close"></div>
+    <a href="#" title="Close" class="js-toggle-modal">Close</a>
     <ul class="flex flex__column">
       <li class="nav__item"><a href="/page">About</a></li>
       <li class="nav__item"><a href="/page">Documentation</a></li>
@@ -98,10 +99,17 @@
     </ul>
   </div>
 
-  <div class="modal">
+  <div class="modal" id="modal-nav-mobile-menu">
     <div class="modal__container">
-      <a href="#" title="Close" class="js-modal-close">Close</a>
+      <a href="#modal-nav-mobile-menu" title="Close" class="js-toggle-modal">Close</a>
       Modal content
+      <div class="nav__mobile-menu">
+        <ul class="flex flex__column">
+          <li class="nav__item"><a href="/page">About</a></li>
+          <li class="nav__item"><a href="/page">Documentation</a></li>
+          <li class="nav__item"><a href="/page">Github</a></li>
+          <li class="nav__item"><a href="/page">Contact</a></li>
+        </ul>
     </div>
   </div>
   
