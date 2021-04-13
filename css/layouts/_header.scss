@@ -11,13 +11,55 @@
 }
 
 .nav {
+	&__main-menu {
+		display: flex;
+		@include screen__lt-sm {
+			display: none;
+		}		
+	}
 	&__item {
 		margin-left: 2rem;
 		a {
 			align-self: center;
 			padding: 2rem;
-			color: $color__primary;
+			color: $color__text;
 			text-decoration: none;
 		}
+		.button {
+			color: $color__white;
+			padding: 1.2rem 2rem;
+		}
+	}
+	&__burger {
+		display: none;
+		@include screen__lt-sm {
+			display: block;
+		}
+	}	
+	&__drop-down {
+		display: none;
+	}
+	&__mobile-menu {
+		background: $color__white;
+    width: 100%;
+		display: none;
+		transition: 0.5s;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 2rem;
+    flex-direction: column;
+    .nav__item {
+    	margin-left: 0;
+    	padding: $spacing;
+    }
+	}
+}
+
+.nav__mobile-menu {
+	&.active {
+		display: flex;
+		height: 100%;
 	}
 }

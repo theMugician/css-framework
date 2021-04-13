@@ -34,5 +34,20 @@ a {
   }
 }
 
-/* Colors */
-  'black' : #000000,
+$border__size: $base__size * 4px;
+
+.border {
+	border: $border__size solid $color__grey--light;
+	&--top {
+		border-top: $border__size solid $color__grey--light;
+	}
+	&--bottom {
+		border-bottom: $border__size solid $color__grey--light;
+	}
+	&--left {
+		border-left: $border__size solid $color__grey--light;
+	}
+	&--right {
+		border-right: $border__size solid $color__grey--light;
+	}
+}

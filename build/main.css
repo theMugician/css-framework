@@ -192,6 +192,22 @@ h2 {
   font-size: 4rem;
 }
 
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
 p {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -970,14 +986,58 @@ p {
   align-items: center;
 }
 
+.nav__main-menu {
+  display: flex;
+}
+@media screen and (max-width: 599.9px) {
+  .nav__main-menu {
+    display: none;
+  }
+}
 .nav__item {
   margin-left: 2rem;
 }
 .nav__item a {
   align-self: center;
   padding: 2rem;
-  color: #1b77b9;
+  color: #425466;
   text-decoration: none;
+}
+.nav__item .button {
+  color: #FFFFFF;
+  padding: 1.2rem 2rem;
+}
+.nav__burger {
+  display: none;
+}
+@media screen and (max-width: 599.9px) {
+  .nav__burger {
+    display: block;
+  }
+}
+.nav__drop-down {
+  display: none;
+}
+.nav__mobile-menu {
+  background: #FFFFFF;
+  width: 100%;
+  display: none;
+  transition: 0.5s;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 2rem;
+  flex-direction: column;
+}
+.nav__mobile-menu .nav__item {
+  margin-left: 0;
+  padding: 2rem;
+}
+
+.nav__mobile-menu.active {
+  display: flex;
+  height: 100%;
 }
 
 .container {
@@ -1301,6 +1361,73 @@ p {
 .flex__order-three {
   -webkit-order: 3;
   order: 3;
+}
+
+.grid {
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+}
+.grid__three-column {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid {
+  --grid-cols: 12;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid > * {
+  grid-column-end: span var(--grid-cols);
+}
+
+.col-1 {
+  grid-column-end: span 1;
+}
+
+.col-2 {
+  grid-column-end: span 2;
+}
+
+.col-3 {
+  grid-column-end: span 3;
+}
+
+.col-4 {
+  grid-column-end: span 4;
+}
+
+.col-5 {
+  grid-column-end: span 5;
+}
+
+.col-6 {
+  grid-column-end: span 6;
+}
+
+.col-7 {
+  grid-column-end: span 7;
+}
+
+.col-8 {
+  grid-column-end: span 8;
+}
+
+.col-9 {
+  grid-column-end: span 9;
+}
+
+.col-10 {
+  grid-column-end: span 10;
+}
+
+.col-11 {
+  grid-column-end: span 11;
+}
+
+.col-12 {
+  grid-column-end: span 12;
 }
 
 /*# sourceMappingURL=main.css.map */

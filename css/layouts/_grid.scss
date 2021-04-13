@@ -1,0 +1,25 @@
+.grid {
+	display: grid;
+	grid-row-gap: $spacing;
+	grid-column-gap: $spacing;
+	&__three-column {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
+
+$grid-columns: 12 !default;
+
+.grid {
+  --grid-cols: #{$grid-columns};
+  display: grid;
+  grid-gap: $spacing; // default grid-gap = 0
+  grid-template-columns: repeat(var(--grid-cols), 1fr); // grid of 12 flexible columns
+
+  > * {
+    grid-column-end: span var(--grid-cols); // each grid item takes full-width by default
+  }
+}
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i}  { grid-column-end: span #{$i}; }
+}

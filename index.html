@@ -18,19 +18,25 @@
         <img src="/assets/logo.jpg"/>
       </div>
       <nav class="header__nav flex">
-        <ul class="nav__list flex flex__align-items-center">
+        <ul class="nav__main-menu flex__align-items-center">
           <li class="nav__item"><a href="/page">About</a></li>
           <li class="nav__item"><a href="/page">Documentation</a></li>
           <li class="nav__item"><a href="/page">Github</a></li>
           <li class="nav__item"><a href="/page">Contact</a></li>
-          <li class="nav__item button button--small button--secondary"><a href="/page">Contact</a></li>
+          <li class="nav__item"><a class="button button--small button--secondary" href="/page">Contact</a></li>
         </ul>
       </nav>
+      <div 
+        class="nav__burger js-toggle-mobile-menu"
+        style="background: red; height: 30px; width: 30px;"
+      >
+      </div>
     </div>
   </header>
   <div class="hero section background-color__black">
   	<div class="container">
         <h1 class="color__white">Heading 1 - CSS Framework</h1>
+        <!--Inspiration https://foundation.app/ -->
   		  <p class="sub-heading color__white">A lightweight custom CSS framework created by Greg Slonina | sevenoceans.agency</p>
         <button class="button button--primary">
           Get started
@@ -39,10 +45,59 @@
   </div>
   <div class="section">
     <div class="container">
-        <h2>Heading 2 - Section Title</h2>
-        <p class="sub-heading">A lightweight custom CSS framework created by Greg Slonina | sevenoceans.agency</p>
+      <h2>Heading 2 - Section Title</h2>
+      <p>Being sick of all the bloat that gets added to all these CSS frameworks I decided to create my own</p>
+      <p>If you love this framework please use it, fork it, and do whatever you want with it</p>
     </div>
-  </div>  
+  </div>
+  <div class="section">
+    <div class="container">
+      <h2>Documentation</h2>
+      <h3>Typography</h3>
+      <h1>h1. heading</h1>
+      <h2>h2. heading</h2>
+      <h3>h3. heading</h3>
+      <h4>h4. heading</h4>
+      <h5>h5. heading</h5>
+      <h6>h6. heading</h6>
+      <p>This is a paragraph</p>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+      </ul>
+    </div>
+  </div> 
+  <div class="section">
+    <div class="container">
+      <h3>Grid System</h3>
+      <div class="grid grid__three-column">
+        <div class="background-color__black">
+          <h4 class="color__white">Box 1</h4>
+        </div>
+        <div class="background-color__black">
+          <h4 class="color__white">Box 2</h4>
+        </div>
+        <div class="background-color__black">
+          <h4 class="color__white">Box 3</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add modals and scripts here -->
+  
+  <div class="nav__mobile-menu">
+    <div class="close"></div>
+    <ul class="flex flex__direction-column">
+      <li class="nav__item"><a href="/page">About</a></li>
+      <li class="nav__item"><a href="/page">Documentation</a></li>
+      <li class="nav__item"><a href="/page">Github</a></li>
+      <li class="nav__item"><a href="/page">Contact</a></li>
+    </ul>
+  </div>
+
   <script src="build/main.js"></script>
 
 </body>
