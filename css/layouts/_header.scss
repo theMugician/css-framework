@@ -24,6 +24,7 @@
 			padding: 2rem;
 			color: $color__text;
 			text-decoration: none;
+			display: inline-block;
 		}
 		.button {
 			color: $color__white;
@@ -53,6 +54,43 @@
     	}
     }
 	}
+}
+
+li:hover,
+li:focus-within {
+  background: $color__primary;
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+.dropdown {
+	z-index: 1;
+  background: $color__primary;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
 }
 
 .nav__mobile-menu {
