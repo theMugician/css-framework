@@ -66,6 +66,10 @@ li:focus-within a {
   outline: none;
 }
 
+.has-dropdown {
+	position: relative;
+}
+
 .dropdown {
 	z-index: 1;
   background: $color__primary;
