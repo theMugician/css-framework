@@ -35,7 +35,7 @@ a {
   }
 }
 
-$border__size: $base__size * 4;
+$border__size: 0.2rem;
 
 .border {
 	border: $border__size solid $color__grey--light;

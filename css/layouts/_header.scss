@@ -56,11 +56,13 @@
 	}
 }
 
+/*
 li:hover,
 li:focus-within {
   background: $color__primary;
   cursor: pointer;
 }
+*/
 
 li:focus-within a {
   outline: none;
@@ -72,13 +74,13 @@ li:focus-within a {
 
 .dropdown {
 	z-index: 1;
-  background: $color__primary;
+  background: $color__white;
   visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
+	border: 0.1rem solid $color__grey--light;  
+	opacity: 0;
+  min-width: 16rem;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 1rem;
   left: 0;
   display: none;
 }
