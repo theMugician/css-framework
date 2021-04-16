@@ -69,14 +69,6 @@
 	}
 }
 
-/*
-li:hover,
-li:focus-within {
-  background: $color__primary;
-  cursor: pointer;
-}
-*/
-
 li:focus-within a {
   outline: none;
 }
@@ -93,9 +85,17 @@ li:focus-within a {
 	opacity: 0;
   min-width: 16rem;
   position: absolute;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   left: 0;
-  display: none;
+	.nav__item {
+		margin-left: 0;
+		a {
+			@include screen__lt-md {
+				padding-left: 2rem;
+			}
+			display: block;
+		}
+	}
 }
 
 ul li:hover > ul,

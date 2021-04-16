@@ -1415,16 +1415,16 @@ p {
   bottom: 0;
   left: 0;
   z-index: 9999;
-  display: none;
   opacity: 0;
   transition: all 0.5s;
-  display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 .modal.active {
   display: flex;
   opacity: 1;
+  pointer-events: auto;
 }
 .modal__container {
   width: 100%;
@@ -1517,13 +1517,6 @@ p {
   display: block;
 }
 
-/*
-li:hover,
-li:focus-within {
-  background: $color__primary;
-  cursor: pointer;
-}
-*/
 li:focus-within a {
   outline: none;
 }
@@ -1540,9 +1533,19 @@ li:focus-within a {
   opacity: 0;
   min-width: 16rem;
   position: absolute;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
   left: 0;
-  display: none;
+}
+.dropdown .nav__item {
+  margin-left: 0;
+}
+.dropdown .nav__item a {
+  display: block;
+}
+@media (max-width: 919.9px) {
+  .dropdown .nav__item a {
+    padding-left: 2rem;
+  }
 }
 
 ul li:hover > ul,
